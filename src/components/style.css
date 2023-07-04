@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+
+}
+ 
+.container{
+    width: 90%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropdown{
+    width: 40%;
+    margin: 100px auto;
+    position: relative;
+    user-select: none;
+    right: 15%;
+}
+
+.dropdown .dropdown-btn{
+    padding: 10px;
+    background: #fff;
+    box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;    
+}
+
+.dropdown .dropdown-content{
+position: absolute;
+top: 17%;   
+left: 0;
+padding: 10px;
+background: #fff;
+box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+color: #333;
+width: 98%;
+font-weight: 5oo;
+
+}
+
+.dropdown .dropdown-content .dropdown-item{
+    padding: 10px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.dropdown .dropdown-content .dropdown-item:hover{
+    background: #f4f4f4;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -1rem;
+    left: -7rem;
+}
+
+.card .head{
+    font-size: 5rem;
+    font-weight: 500;
+    color: #c3cfd9;
+}
+
+.card .card-content{
+    margin-top: 3rem;
+    padding: 0  3rem ;
+    border: 1px solid #cbd6de;
+    border-radius: 7px;
+    color: #293845;
+    box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .card-content h1{
+    padding: 1rem;
+}
+.card .card-content .price{
+    padding: .5rem;
+    font-weight: 500;
+}
+
+.card .card-content .id{
+    padding: 1.3rem 0 2rem 0;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .dropdown {
+      width: 30%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .container {
+      flex-direction: column;   
+      align-items: center;
+      margin: 4rem;
+    }
+    .dropdown{
+        right: 24%;
+    }
+  }
+
